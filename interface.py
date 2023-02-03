@@ -8,8 +8,8 @@ import pandas as pd
 
 print('Welcome To Prediction App')
 
-with open('cgpa.pkl','rb') as f:
-    l_model = pickle.load(f)
+
+model = pickle.load(open('cgpa.pkl', 'rb'))
 
 app=Flask(__name__)
 
